@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This is My First Webpage</title>
+</head>
+<body>
+    <div>
+        <h1 id="#Top">This is my first Webpage</h1>
+            <p>The purpose of this webpage is to practice HTML elements 
+            and functions.<br>
+            For example one element to use is the <code> < code > </code> element,
+            which allows one to display code lines in the monospace font of the browser. <br>
+            </p>
+    </div>
+    <div>
+        <h3>And now, a picture!!</h3>
+            <a href="https://keepcalms.com/p/keep-calm-and-tadaaa/" target="_blank"> 
+            <img src="keep-calm-and-tadaaa.png" alt="Tadaaaa!"> </a>
+            <p>The image above is also a link to it's original source.</p>
+    </div>
+    <div>
+        <h3>Some kickass movie suggestions</h3>
+            <p><a href="https://www.netflix.com/">Netflix</a> is the best platform
+            available to watch movies these days. It is high quality streaming with 
+            a whole lot of choices. Here are some honorable mentions:</p>
+            
+            <style>
+                table,
+                td,
+                th {
+                    padding: 10px;
+                    border: 3px solid black;
+                    border-radius: 2px;
+                    border-collapse: collapse;
+                }
+            </style>
+            <table>
+                <caption>This is a table showcasing good movies</caption>
+            <thead>
+                <tr>
+                    <th>Movie Name</th>
+                    <th>Genre</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>The King's Speech</th>
+                    <th>Historical Drama, BOATS</th>
+                </tr>
+                <tr>
+                    <th>Harry Potter</th>
+                    <th>Fantasy Adventure</th>
+                </tr>
+                <tr>
+                    <th>The Lord of The Rings</th>
+                    <th>Fantasy Adventure</th>
+                </tr>
+                <tr>
+                    <th>Interstellar</th>
+                    <th>Sci-fi</th>
+                </tr>
+                <tr>
+                    <th>How to Train Your Dragon</th>
+                    <th>Fantasy Animation</th>
+                </tr>
+                <tr>
+                    <th>Mary & Max (Not on Netflix)</th>
+                    <th>Stop Motion Animation, BOATS</th>
+                </tr>
+            </tbody>
+            </table>
+    </div>
+    <div>
+    <h4>About the Creator</h4>
+        <p>I'm an English teacher and also:</p>
+            <ul>
+                <li>A Coder</li>
+                <li>A Poet</li>
+                <li>A Lover</li>
+                <li>A Music Whore</li>
+            </ul>
+        <p>I like to:</p>
+            <ul>
+                <li>Dance</li>
+                <li>Play Chess</li>
+                <li>Play Video Games</li>
+                <li>Eat like the World is ending</li>
+            </ul>
+        <p>Real and fictional animals that I like in order going from the most to the least:</p>
+            <ol>
+                <li>Dogs</li>
+                <li>Dragons</li>
+                <li>Pandas</li>
+                <li>Tigers</li>
+                <li>The Mantis Shrimp</li>
+            </ol>
+    </div>
+    <div>
+    <h3>Now, time to tell me about yourselves</h3>
+    <form action="#">
+        <ul>
+            <li>
+                <label for="name">Name</label>
+                <input type="text" placeholder="Please Enter Name" id="name" name="user_name" required>
+            </li>
+            <li>
+                <label for="surname">Surname</label>
+                <input type="text" placeholder="Please Enter Surname" id="surname" name="user_surname" required>
+            </li>
+            <li>
+                <label for="favouriteanimal">Favourite Animal</label>
+                <input type="text" placeholder="Please Enter Favourite Animal" id="favouriteanimal" name="user_animal" required>
+            </li>
+            <li>
+                <label for="male">
+                    <input type="radio" id="male" name="male-female">Male
+                </label>
+                <label for="female">
+                    <input type="radio" id="female" name="male-female" checked>Female
+                </label>
+            </li>
+            <p>I agree to have this information used by the receiver for the purposes of:</p>
+            <li>
+                <label for="stalking">
+                    <input type="checkbox" id="stalking" name="stalking">Stalking
+                </label>
+                <label for="blackmail">
+                    <input type="checkbox" id="blackmail" name="blackmail">Blackmailing
+                </label>
+                <label for="advertisement">
+                    <input type="checkbox" id="advertisement" name="advertisement">Advertisement
+                </label>
+                <label for="worlddomination">
+                    <input type="checkbox" id="worlddomination" name="worlddomination">World Domination
+                </label>
+            </li>
+            <br>
+            <button type="submit" style="height: 35px; width: 200px;"> SUBMIT DEM NIGGAS </button>
+    </form>
+    </div>
+    <a href="#" id="#Top">Return to the top of the page</a>
+</body>
+</html>
