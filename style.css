@@ -202,12 +202,18 @@ caption {
     .about-box, .minibox-container {
         width: 100%;
     }
+    .last-box {
+        max-height: 550px;
+    }
 }
 
 @media screen and (max-width: 500px) {
     .box-container {
         display: flex;
         flex-direction: column;
+    }
+    .last-box {
+        max-height: 550px;
     }
 }
 
@@ -216,11 +222,17 @@ caption {
         display: flex;
         flex-direction: column;
     }
+    .last-box {
+        max-height: 550px;
+    }
 }
 
 @media screen and (max-width: 980px) {
     .box-container {
         display: flex;
         flex-direction: column;
+    }
+    .last-box {
+        max-height: 550px;
     }
 }
