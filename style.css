@@ -33,6 +33,7 @@
 
 .about-box {
     background-color: #CEFF1A;
+    max-height: 400px;
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 10% 90%;
@@ -117,6 +118,7 @@ caption {
 
 .last-box {
     background-color: #CEFF1A;
+    max-height: 400px;
     border-radius: 10%;
     margin: 7px;
     padding: 3px;
@@ -200,6 +202,13 @@ caption {
 }
 
 @media screen and (max-width: 700px) {
+    .box-container {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 980px) {
     .box-container {
         display: flex;
         flex-direction: column;
