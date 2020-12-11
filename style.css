@@ -4,6 +4,7 @@
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 50% 50%;
+    margin: 15px;
 }
 
 .first-two-boxes {
@@ -16,6 +17,7 @@
     justify-content: center;
     align-items: center;
     align-content: center;
+    padding: 5px;
 }
 
 .movie-box {
@@ -115,7 +117,7 @@ caption {
 
 .last-box {
     background-color: #CEFF1A;
-    border-radius: 15%;
+    border-radius: 10%;
     margin: 7px;
     padding: 3px;
 }
@@ -188,4 +190,18 @@ caption {
 
 .picture {
     border-radius: 50%;
+}
+
+@media screen and (max-width: 500px) {
+    .box-container {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .box-container {
+        display: flex;
+        flex-direction: column;
+    }
 }
