@@ -3,40 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css"/> 
+    <link rel="stylesheet" href="https://fonts.google.com/specimen/Faster+One">
     <title>This is My First Webpage</title>
 </head>
-<body>
-    <div>
-        <h1 id="#Top">This is my first Webpage</h1>
-            <p>The purpose of this webpage is to practice HTML elements 
-            and functions.<br>
-            For example one element to use is the <code> < code > </code> element,
-            which allows one to display code lines in the monospace font of the browser. <br>
-            </p>
+<body class="box-container">
+    <div class="first-two-boxes-shell">
+    <div class="first-two-boxes">
+        <div class="first-box">
+            <div class="first-headline">
+                <h1 class="headline" id="#Top">This is my first Webpage</h1>
+            </div>
+            <div class="first-paragraph">
+                <p>The purpose of this webpage is to practice HTML elements 
+                and functions.<br>
+                For example one element to use is the <code> < code > </code> element,<br>
+                which allows one to display code lines in the monospace font of the browser. <br>
+                </p>
+            </div>
+        </div>
+        <div class="second-box">
+            <div class="picture-headline">
+                <h3 class="headline">And now, a picture!!</h3>
+            </div>
+            <div class="picture-box">
+                <div>
+                    <a href="https://keepcalms.com/p/keep-calm-and-tadaaa/" target="_blank">
+                    <img src="keep-calm-and-tadaaa.png" alt="Tadaaaa!" height="300px" width="350px" class="picture"> </a>
+                </div>
+                <p>The image above is also a link to it's original source.</p>
+            </div>
+        </div>
     </div>
-    <div>
-        <h3>And now, a picture!!</h3>
-            <a href="https://keepcalms.com/p/keep-calm-and-tadaaa/" target="_blank"> 
-            <img src="keep-calm-and-tadaaa.png" alt="Tadaaaa!"> </a>
-            <p>The image above is also a link to it's original source.</p>
     </div>
-    <div>
-        <h3>Some kickass movie suggestions</h3>
+    <div class="movie-box-shell">
+    <div class="movie-box">
+            <h3 class="headline">Some kickass movie suggestions</h3>
             <p><a href="https://www.netflix.com/">Netflix</a> is the best platform
-            available to watch movies these days. It is high quality streaming with 
+            available to watch<br> movies these days. It is high quality streaming with<br> 
             a whole lot of choices. Here are some honorable mentions:</p>
-            
-            <style>
-                table,
-                td,
-                th {
-                    padding: 10px;
-                    border: 3px solid black;
-                    border-radius: 2px;
-                    border-collapse: collapse;
-                }
-            </style>
-            <!-- NE OLURSA OLSUN BU BIR COMMENTDIR -->
+        <div class="table">
             <table>
                 <caption>This is a table showcasing good movies</caption>
             <thead>
@@ -72,75 +78,95 @@
                 </tr>
             </tbody>
             </table>
+        </div>
+    </div>    
     </div>
-    <div>
-    <h4>About the Creator</h4>
-        <p>I'm an English teacher and also:</p>
-            <ul>
-                <li>A Coder</li>
-                <li>A Poet</li>
-                <li>A Lover</li>
-                <li>A Music Whore</li>
-            </ul>
-        <p>I like to:</p>
-            <ul>
-                <li>Dance</li>
-                <li>Play Chess</li>
-                <li>Play Video Games</li>
-                <li>Eat like the World is ending</li>
-            </ul>
-        <p>Real and fictional animals that I like in order going from the most to the least:</p>
-            <ol>
-                <li>Dogs</li>
-                <li>Dragons</li>
-                <li>Pandas</li>
-                <li>Tigers</li>
-                <li>The Mantis Shrimp</li>
-            </ol>
+    <div class="about-box">
+        <h3 class="headline-inverse-color">About the Creator</h3>
+        <div class="minibox-container">
+            <div class="minibox-1">
+                <p>I'm an English teacher and also:</p>
+                <ul>
+                    <li>A Coder</li>
+                    <li>A Poet</li>
+                    <li>A Lover</li>
+                    <li>A Music Whore</li>
+                </ul>
+            </div>
+            <div class="minibox-2">
+                <p>I like to:</p>
+                <ul>
+                    <li>Dance</li>
+                    <li>Play Chess</li>
+                    <li>Play Video Games</li>
+                    <li>Eat like the World is ending</li>
+                </ul>
+            </div>
+            <div class="minibox-3">
+            <p>Real and fictional animals that I like in order:</p>
+                <ol>
+                    <li>Dogs</li>
+                    <li>Dragons</li>
+                    <li>Pandas</li>
+                    <li>Tigers</li>
+                    <li>The Mantis Shrimp</li>
+                </ol>
+            </div>
+        </div>
     </div>
-    <div>
-    <h3>Now, time to tell me about yourselves</h3>
-    <form action="#">
-        <ul>
-            <li>
-                <label for="name">Name</label>
-                <input type="text" placeholder="Please Enter Name" id="name" name="user_name" required>
-            </li>
-            <li>
-                <label for="surname">Surname</label>
-                <input type="text" placeholder="Please Enter Surname" id="surname" name="user_surname" required>
-            </li>
-            <li>
-                <label for="favouriteanimal">Favourite Animal</label>
-                <input type="text" placeholder="Please Enter Favourite Animal" id="favouriteanimal" name="user_animal" required>
-            </li>
-            <li>
-                <label for="male">
-                    <input type="radio" id="male" name="male-female">Male
-                </label>
-                <label for="female">
-                    <input type="radio" id="female" name="male-female" checked>Female
-                </label>
-            </li>
+    <div class="last-box">
+        <div class="special-margin">
+            <h3 class="headline-inverse-color">Now, time to tell me about yourselves</h3>
+        </div>
+        <div class="form-box">
+        <form action="#">
+            <ul>
+                <li class="input-form">
+                    <label for="name">Name</label>
+                    <input type="text" placeholder="Please Enter Name" id="name" name="user_name" required>
+                </li>
+                <li class="input-form">
+                    <label for="surname">Surname</label>
+                    <input type="text" placeholder="Please Enter Surname" id="surname" name="user_surname" required>
+                </li>
+                <li class="input-form">
+                    <label for="favouriteanimal">Favourite Animal</label>
+                    <input type="text" placeholder="Please Enter Favourite Animal" id="favouriteanimal" name="user_animal" required>
+                </li>
+                <li>
+                    <label for="male" class="radio-male">
+                        <input type="radio" id="male" name="male-female">Male
+                    </label>
+                    <label for="female" class="radio-female">
+                        <input type="radio" id="female" name="male-female" checked>Female
+                    </label>
+                </li>
+        </div>
+        <div class="checkbox-box">
             <p>I agree to have this information used by the receiver for the purposes of:</p>
             <li>
-                <label for="stalking">
+                <label for="stalking" class="checkbox1">
                     <input type="checkbox" id="stalking" name="stalking">Stalking
                 </label>
-                <label for="blackmail">
+                <label for="blackmail" class="checkbox2">
                     <input type="checkbox" id="blackmail" name="blackmail">Blackmailing
                 </label>
-                <label for="advertisement">
+                <label for="advertisement" class="checkbox3">
                     <input type="checkbox" id="advertisement" name="advertisement">Advertisement
                 </label>
-                <label for="worlddomination">
+                <label for="worlddomination" class="checkbox4">
                     <input type="checkbox" id="worlddomination" name="worlddomination">World Domination
                 </label>
             </li>
+        </div>
             <br>
-            <button type="submit" style="height: 35px; width: 200px;"> SUBMIT DEM NIGGAS </button>
+            <button type="submit" style="height: 35px; width: 200px;" class="submit-button"> SUBMIT DEM NIGGAS </button>
     </form>
     </div>
-    <a href="#" id="Topping">Return to the top of the page</a>
+    <div class="return-link">
+        <br>
+        <a href="#" id="Topping">Return to the top of the page</a>
+        <br>
+    </div>
 </body>
 </html>
